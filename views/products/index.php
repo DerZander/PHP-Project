@@ -5,33 +5,20 @@
             <div class="col">
                 <h1 class="m-0">
                     Produkte
+                    <?php //ToDO:Category filter ?>
                     <?php if($_GET){ echo " mit der Kategorie: {$_GET['category']}"; } ?>
                 </h1>
             </div>
-            <div class="col-3 mt-2">
-                <div class="input-group">
-                    <input type="text" class="form-control" maxlength="30" aria-label="Text input with segmented dropdown button">
-                    <button type="button" class="btn btn-outline-secondary">Suchen</button>
-                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                        <span class="visually-hidden">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li>
-                            <a class="dropdown-item" href="list.php?">
-                                Kein Filter
-                            </a>
-                        </li>
-                        <div class="dropdown-divider"></div>
-
-                        <?php foreach ($categories as $row):?>
-                            <li>
-                                <a class="dropdown-item" href="list.php?category=<?php echo $row["name"] ?>">
-                                    <?php echo $row["name"] ?>
-                                </a>
-                            </li>
-                        <?php endforeach;?>
-                    </ul>
-                </div>
+            <div class="col-5 mt-2">
+                <form class="row" method="GET" action="index">
+                    <div class="col-auto">
+                        <label for="search" class="visually-hidden">Suche</label>
+                        <input type="text" class="form-control" id="search" placeholder="Suche">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-0">Suchen</button>
+                    </div>
+                </form>
             </div>
 
         </div>
@@ -43,7 +30,7 @@
                 <div class="col">
                     <div class="card" style="width: auto">
                         <div class="card-header">
-                            <h5 class="card-title text-center mb-0 pb-0"><?php echo $row->name ?></h5>
+                            <h5 class="card-title text-center mb-0 pb-0"><?php echo e($row['name']) ?></h5>
                         </div>
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
@@ -54,7 +41,7 @@
                                         </div>
                                         <div class="col-md-8">
                                             <p class="card-text">
-                                                <?php echo nl2br($row->description); ?>
+                                                <?php echo e(nl2br($row['description'])); ?>
                                             </p>
                                         </div>
                                     </div>
@@ -65,7 +52,7 @@
                                             Stückpreis:
                                         </div>
                                         <div class="col">
-                                            <?php echo $row->price ?> €
+                                            <?php echo e($row['price']) ?> €
                                         </div>
                                     </div>
                                 </li>
@@ -73,7 +60,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="d-flex justify-content-between">
-                                <a class="btn btn-success btn-sm ms-2" href="detail.php?id=<?php echo $row->id ?>">Ansehen</a>
+                                <a class="btn btn-success btn-sm ms-2" href="detail?id=<?php echo e($row['id']) ?>">Ansehen</a>
                                 <a class="btn btn-success btn-sm ms-2 disabled">Admin bearbeiten</a>
                             </div>
                         </div>
