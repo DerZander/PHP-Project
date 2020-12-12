@@ -3,36 +3,50 @@
 
 namespace App\Products;
 
+use App\Core\AbstractController;
 
-class ProductsController
+class ProductsController extends AbstractController
 {
-    public function __construct(ProductsRepository $productsRepository)
+    public function __construct(
+        ProductsRepository $productsRepository,
+        RatingRepository $ratingRepository
+    )
     {
         $this->productsRepository = $productsRepository;
+        $this->ratingRepository = $ratingRepository;
         #$this->categoriesRepository = $categoriesRepository;
     }
 
-    protected function render($view, $params){
-        extract($params);
-        include __DIR__ . "/../../views/{$view}.php";
-    }
+
 
     public function index(){
         if ($_GET) {
             $products = $this->productsRepository->fetchFilteredProducts($_GET['category']);
         } else {
-            $products = $this->productsRepository->fetchAllProducts();
+            $products = $this->productsRepository->fetchAll();
         }
         #$categories = $this->categoriesRepository->fetchAllCategories();
 
         $this->render("products/index", ['products'=> $products]);
-        //include __DIR__ . "/../../views/products/index.php";
     }
 
     public function detail(){
         $id = $_GET['id'];
-        $product = $this->productsRepository->fetchProduct($id);
-        include __DIR__ . "/../../views/products/detail.php";
+        var_dump($_POST);
+        if(isset($_POST['content'])){
+            if(!empty($_POST['content'])){
+                $ratingtext = $_POST['content'];
+                $stars = $_POST['stars'];
+                $this->ratingRepository->create($id, $ratingtext, $stars);
+            }
+        }
+
+        $product = $this->productsRepository->fetchOne($id);
+        $ratings = $this->ratingRepository->fetchAllByProduct($id);
+        $this->render("products/detail", [
+            'product'=> $product,
+            'ratings'=> $ratings
+        ]);
     }
 
 }
