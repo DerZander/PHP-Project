@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e21e4223-0c53-48d5-b3f6-9abf7e5588a3" name="Default Changelist" comment="" />
+    <list default="true" id="e21e4223-0c53-48d5-b3f6-9abf7e5588a3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Products/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Products/ProductsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/products/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/products/detail.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,11 +76,35 @@
       <updated>1607722211588</updated>
       <workItem from="1607722215793" duration="1594000" />
       <workItem from="1607766693828" duration="27866000" />
+      <workItem from="1607802613772" duration="539000" />
     </task>
+    <task id="LOCAL-00001" summary="(feat): start to commit the project">
+      <created>1607802921027</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607802921027</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="(feat): start to commit the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="(feat): start to commit the project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="186" key="#Servers" timestamp="1607722320618">
