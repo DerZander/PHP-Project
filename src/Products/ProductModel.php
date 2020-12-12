@@ -1,7 +1,9 @@
 <?php
 namespace App\Products;
 
-class ProductModel
+use App\Core\AbstractModel;
+
+class ProductModel extends AbstractModel
 {
     public $id;
     public $name;
