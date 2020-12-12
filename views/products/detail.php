@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col">
                 <h1 class="m-0">
-                    Produkt: <?php echo $product->name ?>
+                    <?php echo $product->name ?>
                 </h1>
             </div>
         </div>
