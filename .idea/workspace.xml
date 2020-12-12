@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -12,8 +15,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e21e4223-0c53-48d5-b3f6-9abf7e5588a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Products/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Products/ProductModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Products/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Products/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/products/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/products/detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Products/ProductsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Products/ProductsRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/products/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/products/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,16 +54,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\project\src\Products" />
       <recent name="C:\xampp\htdocs\project\views\Products" />
       <recent name="C:\xampp\htdocs\project\views\layouts" />
       <recent name="C:\xampp\htdocs\project\pages\structure" />
       <recent name="C:\xampp\htdocs\project\pages\products" />
-      <recent name="C:\xampp\htdocs\project\pages" />
     </key>
   </component>
   <component name="RunManager">
@@ -76,7 +82,8 @@
       <updated>1607722211588</updated>
       <workItem from="1607722215793" duration="1594000" />
       <workItem from="1607766693828" duration="27866000" />
-      <workItem from="1607802613772" duration="539000" />
+      <workItem from="1607802613772" duration="13448000" />
+      <workItem from="1607816224232" duration="878000" />
     </task>
     <task id="LOCAL-00001" summary="(feat): start to commit the project">
       <created>1607802921027</created>
@@ -85,7 +92,105 @@
       <option name="project" value="LOCAL" />
       <updated>1607802921027</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="(feat): create x params by key and value">
+      <created>1607803186656</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607803186656</updated>
+    </task>
+    <task id="LOCAL-00003" summary="(else):">
+      <created>1607803199467</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607803199467</updated>
+    </task>
+    <task id="LOCAL-00004" summary="(refactor): change H1">
+      <created>1607803226529</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607803226529</updated>
+    </task>
+    <task id="LOCAL-00005" summary="(refactor): change foreach to php-helpers">
+      <created>1607803265574</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607803265574</updated>
+    </task>
+    <task id="LOCAL-00006" summary="(feat): create routing">
+      <created>1607803681414</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607803681414</updated>
+    </task>
+    <task id="LOCAL-00007" summary="(refactor): create a simple router like django for this project">
+      <created>1607816300196</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607816300196</updated>
+    </task>
+    <task id="LOCAL-00008" summary="(delete): remove folder named &quot;pages&quot;">
+      <created>1607816367204</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607816367204</updated>
+    </task>
+    <task id="LOCAL-00009" summary="(refactor): renamed the navbar and the href´s">
+      <created>1607816455248</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607816455248</updated>
+    </task>
+    <task id="LOCAL-00010" summary="(feat): create proctec function for db-entries">
+      <created>1607816501928</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1607816501928</updated>
+    </task>
+    <task id="LOCAL-00011" summary="(refactor): change the form for the ratingsystem and change the display of raitings">
+      <created>1607816594995</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607816594995</updated>
+    </task>
+    <task id="LOCAL-00012" summary="(refactor): delete unecessary code, add ratingRepo to reciepts, add this to ProductsController">
+      <created>1607816862959</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1607816862959</updated>
+    </task>
+    <task id="LOCAL-00013" summary="(feat): create the AbstractController.php, AbstractModel.php, AbstractRepository.php">
+      <created>1607816987281</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607816987281</updated>
+    </task>
+    <task id="LOCAL-00014" summary="(feat): create the RatingModel.php">
+      <created>1607817017360</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1607817017360</updated>
+    </task>
+    <task id="LOCAL-00015" summary="(feat): create the fetchbyProduct  function and the create function">
+      <created>1607817047672</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607817047672</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,10 +206,25 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="(feat): start to commit the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="(feat): start to commit the project" />
+    <MESSAGE value="(feat): create x params by key and value" />
+    <MESSAGE value="(else):" />
+    <MESSAGE value="(refactor): change H1" />
+    <MESSAGE value="(refactor): change foreach to php-helpers" />
+    <MESSAGE value="(feat): create routing" />
+    <MESSAGE value="(refactor): create a simple router like django for this project" />
+    <MESSAGE value="(delete): remove folder named &quot;pages&quot;" />
+    <MESSAGE value="(refactor): renamed the navbar and the href´s" />
+    <MESSAGE value="(feat): create proctec function for db-entries" />
+    <MESSAGE value="(refactor): change the form for the ratingsystem and change the display of raitings" />
+    <MESSAGE value="(refactor): delete unecessary code, add ratingRepo to reciepts, add this to ProductsController" />
+    <MESSAGE value="(feat): create the AbstractController.php, AbstractModel.php, AbstractRepository.php" />
+    <MESSAGE value="(feat): create the RatingModel.php" />
+    <MESSAGE value="(feat): create the fetchbyProduct  function and the create function" />
+    <option name="LAST_COMMIT_MESSAGE" value="(feat): create the fetchbyProduct  function and the create function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="186" key="#Servers" timestamp="1607722320618">
@@ -115,18 +235,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607722340391" />
+    <state x="1123" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607808076149">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1123" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607808076149" />
     <state x="1220" y="264" key="FileChooserDialogImpl" timestamp="1607802582922">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1220" y="264" key="FileChooserDialogImpl/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607802582922" />
-    <state x="1159" y="246" key="NewPhpClassDialog" timestamp="1607794782621">
+    <state x="1159" y="246" key="NewPhpClassDialog" timestamp="1607808061759">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1159" y="246" key="NewPhpClassDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607794782621" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1607799819747">
+    <state x="1159" y="246" key="NewPhpClassDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607808061759" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1607804829991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607799819747" />
+    <state x="794" y="443" key="NewPhpFileDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607804829991" />
     <state x="922" y="164" key="SettingsEditor" timestamp="1607802535130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -135,13 +259,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="986" y="285" key="refactoring.ChangeSignatureDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607795778880" />
-    <state x="1096" y="244" key="run.anything.popup" timestamp="1607785941331">
+    <state x="1096" y="244" key="run.anything.popup" timestamp="1607812273054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1096" y="244" key="run.anything.popup/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607785941331" />
-    <state x="1103" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607794061150">
+    <state x="1096" y="244" key="run.anything.popup/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607812273054" />
+    <state x="1103" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607813823819">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1103" y="225" width="672" height="678" key="search.everywhere.popup/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607794061150" />
+    <state x="1103" y="225" width="672" height="678" key="search.everywhere.popup/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607813823819" />
   </component>
 </project>
