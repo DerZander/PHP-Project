@@ -1,29 +1,18 @@
 <?php
 namespace App\Products;
 
-use PDO;
+use App\Core\AbstractRepository;
 
-class ProductsRepository
+class ProductsRepository extends AbstractRepository
 {
-    private $pdo;
-    public function __construct(PDO $pdo){
-        $this->pdo = $pdo;
+    public function getTableName(){
+        return "products";
     }
 
-    function fetchAllProducts()
-    {
-        $stmt = $this->pdo->query("SELECT * FROM `products`");
-        return $stmt->fetchAll(PDO::FETCH_CLASS, "App\\products\\ProductModel");
+    public function getModelName(){
+        return "App\\Products\\ProductModel";
     }
-
-    function fetchProduct($id)
-    {
-        $stmt = $this->pdo->prepare("SELECT * FROM products WHERE id = :id");
-        $stmt->execute(['id' => $id]);
-        $stmt->setFetchMode(PDO::FETCH_CLASS, "App\\products\\ProductModel");
-        return $stmt->fetch(PDO::FETCH_CLASS);
-    }
-
+    /*
     function fetchFilteredProducts($category)
     {
         $stmtCategory = $this->pdo->prepare("SELECT id FROM categories WHERE name = :category");
@@ -34,6 +23,6 @@ class ProductsRepository
         $stmt->setFetchMode(PDO::FETCH_CLASS, "App\\products\\ProductModel");
         return $stmt->fetchAll(PDO::FETCH_CLASS, "App\\products\\ProductModel");
 
-    }
+    }*/
 }
 ?>
