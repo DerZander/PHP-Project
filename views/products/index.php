@@ -9,16 +9,30 @@
                     <?php if($_GET){ echo " mit der Kategorie: {$_GET['category']}"; } ?>
                 </h1>
             </div>
-            <div class="col-5 mt-2">
-                <form class="row" method="GET" action="index">
-                    <div class="col-auto">
-                        <label for="search" class="visually-hidden">Suche</label>
-                        <input type="text" class="form-control" id="search" placeholder="Suche">
-                    </div>
-                    <div class="col-auto">
-                        <button type="submit" class="btn btn-primary mb-0">Suchen</button>
-                    </div>
-                </form>
+            <div class="col mt-2">
+                <div class="d-flex justify-content-end ">
+                    <form class="row" method="GET" action="index">
+                        <div class="col-auto">
+                            <label for="search" class="visually-hidden">Suche</label>
+                            <input type="text" class="form-control" id="search" placeholder="Suche">
+                        </div>
+                        <div class="col-auto">
+                            <div class="btn-group ">
+                                <button type="submit" class="btn btn-primary">Suchen</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                                    <li><a class="dropdown-item" href="#">Kein Filter</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <?php foreach ($categories as $category):?>
+                                        <li><a class="dropdown-item" href="?category=<?php echo $category['name'] ?>"><?php echo $category['name'] ?></a></li>
+                                    <?php endforeach;?>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
 
         </div>
