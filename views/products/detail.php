@@ -47,7 +47,7 @@ include __DIR__ . "/../layouts/header.php"?>
             <?php foreach ($ratings AS $rating):?>
                 <div class="card text-center m-2">
                     <div class="card-header">
-                        <?php echo e($rating['user_id']) ?>
+                        Bewertung vom: <?php echo nl2br(e($rating['date'])) ?>
                     </div>
                     <div class="card-body">
                         <p class="card-text"><?php echo nl2br(e($rating['rating'])) ?></p>
