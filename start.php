@@ -18,5 +18,6 @@ foreach ($res AS $row){
     var_dump($row);
 }
 
+header("Location: public/urls.php/index")
 
 ?>
