@@ -34,6 +34,17 @@ class ProductsController extends AbstractController
         ]);
     }
 
+    public function admin_list(){
+        if($_SESSION['superuser']){
+            $products = $this->productsRepository->fetchAll();
+            $this->render("products/admin/list",[
+                'products'=> $products,
+            ]);
+        }else{
+            header("Location: index");
+        }
+    }
+
     public function detail(){
         $id = $_GET['id'];
         if(isset($_POST['content'])){
