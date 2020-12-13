@@ -9,12 +9,13 @@ class ProductsController extends AbstractController
 {
     public function __construct(
         ProductsRepository $productsRepository,
-        RatingRepository $ratingRepository
+        RatingRepository $ratingRepository,
+        CategoriesRepository $categoriesRepository
     )
     {
         $this->productsRepository = $productsRepository;
         $this->ratingRepository = $ratingRepository;
-        #$this->categoriesRepository = $categoriesRepository;
+        $this->categoriesRepository = $categoriesRepository;
     }
 
 
@@ -25,9 +26,12 @@ class ProductsController extends AbstractController
         } else {
             $products = $this->productsRepository->fetchAll();
         }
-        #$categories = $this->categoriesRepository->fetchAllCategories();
+        $categories = $this->categoriesRepository->fetchAll();
 
-        $this->render("products/index", ['products'=> $products]);
+        $this->render("products/index", [
+            'products'=> $products,
+            'categories' => $categories,
+        ]);
     }
 
     public function detail(){
