@@ -32,7 +32,6 @@ class ProductsController extends AbstractController
 
     public function detail(){
         $id = $_GET['id'];
-        var_dump($_POST);
         if(isset($_POST['content'])){
             if(!empty($_POST['content'])){
                 $ratingtext = $_POST['content'];
