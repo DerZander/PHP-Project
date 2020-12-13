@@ -16,11 +16,12 @@ class RatingRepository extends AbstractRepository
 
     public function create($product_id, $content, $stars){
         $table = $this->getTableName();
-        $stmt = $this->pdo->prepare("INSERT INTO `$table` (`date`, `rating`, `stars`, `product_id`) VALUES (current_timestamp(), :content, :stars, :product_id);");
+        $stmt = $this->pdo->prepare("INSERT INTO `$table` (`date`, `rating`, `stars`, `product_id`, `user_id`) VALUES (current_timestamp(), :content, :stars, :product_id, :user_id);");
         $stmt->execute([
             'content' => $content,
             'product_id' => $product_id,
             'stars' => $stars,
+            'user_id' => $_SESSION['user_id'],
         ]);
     }
 
