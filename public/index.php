@@ -27,14 +27,19 @@ $routes = [
     ]
 ];
 
-
+if(!empty($_SESSION)){
     if(isset($routes[$pathInfo])){
         $route = $routes[$pathInfo];
         $controller = $container->make($route['controller']);
         $method = $route['method'];
         $controller->$method();
     }
-
+}else{
+    $route = $routes["/login"];
+    $controller = $container->make($route['controller']);
+    $method = $route['method'];
+    $controller->$method();
+}
 
 
 
