@@ -24,7 +24,11 @@ $routes = [
     '/detail' => [
         'controller' => 'productsController',
         'method' => 'detail',
-    ]
+    ],
+    '/list' => [
+    'controller' => 'productsController',
+    'method' => 'admin_list',
+],
 ];
 
 if(!empty($_SESSION)){
