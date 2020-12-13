@@ -18,6 +18,7 @@ class LoginService
         if(password_verify($password, $user->password)){
             $_SESSION['login'] = $user->username;
             $_SESSION['superuser'] = $user->superuser;
+            $_SESSION['user_id'] = $user->id;
             session_regenerate_id(true);
             return true;
         }else{
@@ -26,6 +27,8 @@ class LoginService
     }
     public function logout(){
         unset($_SESSION['login']);
+        unset($_SESSION['superuser']);
+        unset($_SESSION['user_id']);
         session_regenerate_id(true);
     }
 
