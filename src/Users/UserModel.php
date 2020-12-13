@@ -4,7 +4,20 @@
 namespace App\Users;
 
 
-class UserModel
+use App\Core\AbstractModel;
+
+class UserModel extends AbstractModel
 {
+    public $id;
+    public $username;
+    public $first_name;
+    public $last_name;
+    public $email;
+    public $street;
+    public $housenumber;
+    public $postcode;
+    public $city;
+    public $password;
+    public $superuser;
 
 }
