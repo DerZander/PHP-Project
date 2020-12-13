@@ -14,11 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e21e4223-0c53-48d5-b3f6-9abf7e5588a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Users/UsersRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Products/ProductModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Products/ProductModel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Products/ProductsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Products/ProductsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Products/ProductsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Products/ProductsRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/products/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/products/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +80,9 @@
       <workItem from="1607722215793" duration="1594000" />
       <workItem from="1607766693828" duration="27866000" />
       <workItem from="1607802613772" duration="13448000" />
-      <workItem from="1607816224232" duration="878000" />
+      <workItem from="1607816224232" duration="1007000" />
+      <workItem from="1607853872038" duration="470000" />
+      <workItem from="1607854605386" duration="1231000" />
     </task>
     <task id="LOCAL-00001" summary="(feat): start to commit the project">
       <created>1607802921027</created>
@@ -190,7 +189,70 @@
       <option name="project" value="LOCAL" />
       <updated>1607817047672</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="(refactor): change the searchform, add the protection">
+      <created>1607817132052</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1607817132052</updated>
+    </task>
+    <task id="LOCAL-00017" summary="(refactor): extends with AbstractModel">
+      <created>1607817148534</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607817148534</updated>
+    </task>
+    <task id="LOCAL-00018" summary="(refactor): extends with AbstractController, and setup the create function for the rating">
+      <created>1607817183814</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1607817183814</updated>
+    </task>
+    <task id="LOCAL-00019" summary="(refactor): extends with AbstractRespository">
+      <created>1607817199849</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1607817199849</updated>
+    </task>
+    <task id="LOCAL-00020" summary="()">
+      <created>1607817206553</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1607817206553</updated>
+    </task>
+    <task id="LOCAL-00021" summary="(feat): create Usermodel">
+      <created>1607855315284</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1607855315284</updated>
+    </task>
+    <task id="LOCAL-00022" summary="(feat): set the header-location to url.php/">
+      <created>1607855484525</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1607855484525</updated>
+    </task>
+    <task id="LOCAL-00023" summary="(refactor): delete debug_message">
+      <created>1607855517732</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1607855517732</updated>
+    </task>
+    <task id="LOCAL-00024" summary="(feat): create the Model">
+      <created>1607855841492</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1607855841492</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +286,16 @@
     <MESSAGE value="(feat): create the AbstractController.php, AbstractModel.php, AbstractRepository.php" />
     <MESSAGE value="(feat): create the RatingModel.php" />
     <MESSAGE value="(feat): create the fetchbyProduct  function and the create function" />
-    <option name="LAST_COMMIT_MESSAGE" value="(feat): create the fetchbyProduct  function and the create function" />
+    <MESSAGE value="(refactor): change the searchform, add the protection" />
+    <MESSAGE value="(refactor): extends with AbstractModel" />
+    <MESSAGE value="(refactor): extends with AbstractController, and setup the create function for the rating" />
+    <MESSAGE value="(refactor): extends with AbstractRespository" />
+    <MESSAGE value="()" />
+    <MESSAGE value="(feat): create Usermodel" />
+    <MESSAGE value="(feat): set the header-location to url.php/" />
+    <MESSAGE value="(refactor): delete debug_message" />
+    <MESSAGE value="(feat): create the Model" />
+    <option name="LAST_COMMIT_MESSAGE" value="(feat): create the Model" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="186" key="#Servers" timestamp="1607722320618">
@@ -243,10 +314,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1220" y="264" key="FileChooserDialogImpl/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607802582922" />
-    <state x="1159" y="246" key="NewPhpClassDialog" timestamp="1607808061759">
+    <state x="1159" y="246" key="NewPhpClassDialog" timestamp="1607855446706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1159" y="246" key="NewPhpClassDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607808061759" />
+    <state x="1159" y="246" key="NewPhpClassDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607855446706" />
     <state x="794" y="443" key="NewPhpFileDialog" timestamp="1607804829991">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
