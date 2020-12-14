@@ -16,9 +16,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="products">Produkte</a>
                     </li>
+                    <?php if(isset($_COOKIE['cart'])): ?>
                     <li class="nav-item">
                         <a class="nav-link" href="cart">Warenkorb</a>
                     </li>
+                    <?php endif; ?>
                 </ul>
                 <div class="d-flex">
                     <div class="nav-item dropdown">
@@ -28,6 +30,9 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><h6 class="dropdown-header">Konto</h6></li>
                                 <li><a class="dropdown-item" href="user-edit">Bearbeiten</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><h6 class="dropdown-header">Archiv</h6></li>
+                                <li><a class="dropdown-item" href="cart-orders">Bestellungen</a></li>
                                 <div class="dropdown-divider"></div>
                             <?php if($_SESSION['user_superuser']): ?>
                                 <li><h6 class="dropdown-header">Adminbereich</h6></li>
