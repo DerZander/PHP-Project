@@ -38,8 +38,7 @@
         </div>
     </div>
     <div class="card-body">
-
-        <div class="row row-cols-1 row-cols-md-3 ">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
             <?php foreach ($products AS $row): ?>
                 <div class="col">
                     <div class="card" style="width: auto">
@@ -49,16 +48,9 @@
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <img src=".." alt="...">
-                                        </div>
-                                        <div class="col-md-8">
-                                            <p class="card-text">
-                                                <?php echo e(nl2br($row['description'])); ?>
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <p class="card-text">
+                                        <?php echo e(nl2br($row['description'])); ?>
+                                    </p>
                                 </li>
                                 <li class="list-group-item">
                                     <div class="row">
@@ -73,9 +65,8 @@
                             </ul>
                         </div>
                         <div class="card-footer">
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-center">
                                 <a class="btn btn-success btn-sm ms-2" href="detail?id=<?php echo e($row['id']) ?>">Ansehen</a>
-                                <a class="btn btn-success btn-sm ms-2 disabled">Admin bearbeiten</a>
                             </div>
                         </div>
                     </div>
