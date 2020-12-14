@@ -34,8 +34,6 @@ class ProductsController extends AbstractController
         ]);
     }
 
-
-
     public function detail(){
         $id = $_GET['id'];
         if(isset($_POST['content'])){
