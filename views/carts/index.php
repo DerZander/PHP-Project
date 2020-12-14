@@ -14,8 +14,9 @@
             <thead>
             <tr>
                 <th scope="col">Produkt</th>
-                <th scope="col">Preis</th>
                 <th scope="col">Stückzahl</th>
+                <th scope="col">Preis</th>
+
             </tr>
             </thead>
             <tbody>
@@ -25,8 +26,9 @@
                 ?>
                     <tr>
                         <td><?php echo $product['product_name'] ?></td>
-                        <td><?php echo $product['product_price'] ?> €</td>
                         <td><?php echo $product['amount'] ?></td>
+                        <td><?php echo $product['product_price'] ?> €</td>
+
                     </tr>
                 <?php
                     endforeach;
@@ -36,8 +38,9 @@
             <tfoot>
                 <tr class="table-active">
                     <td>Gesamt:</td>
-                    <td><?php echo $total_price ?> €</td>
                     <td><?php echo $total_amount ?></td>
+                    <td><?php echo $total_price ?> €</td>
+
                 </tr>
             </tfoot>
         </table>
