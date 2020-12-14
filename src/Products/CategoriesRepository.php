@@ -32,5 +32,18 @@ class CategoriesRepository extends AbstractRepository
             'id' => $model->id,
         ]);
     }
+
+    public function delete($id){
+        $table = $this->getTableName();
+        $table_products = "products";
+        $stmt = $this->pdo->prepare("DELETE FROM `{$table_products}` WHERE `category_id` = :id;");
+        $stmt->execute([
+            'id' => $id,
+        ]);
+        $stmt = $this->pdo->prepare("DELETE FROM `{$table}` WHERE `id` = :id;");
+        $stmt->execute([
+            'id' => $id,
+        ]);
+    }
 }
 ?>
