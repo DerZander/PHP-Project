@@ -5,7 +5,7 @@ include __DIR__ . "/../../layouts/header.php"?>
             <div class="row">
                 <div class="col">
                     <h1 class="m-0">
-                        Erstellen
+                        Neues Produkt erstellen
                     </h1>
                 </div>
             </div>
