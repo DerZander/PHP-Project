@@ -6,12 +6,14 @@ namespace App\Carts;
 
 use App\Core\AbstractController;
 use App\Products\ProductsRepository;
+use App\Users\UsersRepository;
 
 class CartsController extends AbstractController
 {
-    public function __construct(CartsRepository $cartsRepository, ProductsRepository $productsRepository){
+    public function __construct(CartsRepository $cartsRepository, ProductsRepository $productsRepository, UsersRepository $usersRepository){
         $this->cartsRepository = $cartsRepository;
         $this->productsRepository = $productsRepository;
+        $this->usersRepository = $usersRepository;
     }
 
     public function index(){
@@ -65,11 +67,19 @@ class CartsController extends AbstractController
     }
 
     public function pay(){
+        $user_id = $_SESSION['user_id'];
+        $user = $this->usersRepository->fetchOne($user_id);
+        if(empty($user->first_name) OR empty($user->last_name) OR empty($user->street) OR empty($user->housenumber) OR empty($user->postcode) OR empty($user->city)){
+            $this->render("carts/conclusion", [
+                "success" => false,
+            ]);
+            return;
+        }
         date_default_timezone_set('UTC');
         if(!isset($_COOKIE['cart'])){
             header("Location: cart");
         }
-        $user_id = $_SESSION['user_id'];
+
         $cart_id = $this->cartsRepository->create_cart($user_id);
         $total_amount = 0;
         $total_price = 0;
@@ -90,7 +100,25 @@ class CartsController extends AbstractController
 
         setcookie("cart", null, -3000);
         $this->render("carts/conclusion", [
+            "success" => true,
+        ]);
+    }
 
+    public function orders(){
+        $user_id = $_SESSION['user_id'];
+        $carts = $this->cartsRepository->fetchAllById($user_id);
+        $this->render("carts/orders", [
+            "carts" => $carts,
+        ]);
+    }
+    public function order(){
+        $id = $_GET['id'];
+        $cart = $this->cartsRepository->fetchOne($id);
+        $products = $this->cartsRepository->fetchAllOrder($id);
+
+        $this->render("carts/order", [
+            "cart" => $cart,
+            "products" => $products,
         ]);
     }
 }

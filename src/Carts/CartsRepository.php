@@ -28,14 +28,15 @@ class CartsRepository extends AbstractRepository
 
     public function create_cart($user_id){
         $table = $this->getTableName();
-        $cart_id = $this->find_cart($user_id)['id'];
-        if($cart_id==false){
+        $cart = $this->find_cart($user_id);
+        if($cart==false){
             $stmt = $this->pdo->prepare("INSERT INTO `$table` (`user_id`) VALUES (:user_id);");
             $stmt->execute([
                 'user_id' => $user_id,
             ]);
-            $cart_id = $this->find_cart($user_id);
+            $cart = $this->find_cart($user_id);
         }
+        $cart_id = $cart['id'];
         return $cart_id;
     }
 
@@ -60,5 +61,23 @@ class CartsRepository extends AbstractRepository
             'product_name' => $product_name,
             'product_price' => $product_price,
         ]);
+    }
+
+    function fetchAllById($user_id)
+    {
+        $table = $this->getTableName();
+        $model = $this->getModelName();
+        $stmt = $this->pdo->prepare("SELECT * FROM $table WHERE user_id = :user_id");
+        $stmt->execute(['user_id' => $user_id]);
+        return $stmt->fetchAll(PDO::FETCH_CLASS, $model);
+    }
+
+    function fetchAllOrder($id)
+    {
+        $table = "cart_content";
+        $model = "App\\Carts\\CartContentModel";
+        $stmt = $this->pdo->prepare("SELECT * FROM $table WHERE cart_id = :id");
+        $stmt->execute(['id' => $id]);
+        return $stmt->fetchAll(PDO::FETCH_CLASS, $model);
     }
 }
