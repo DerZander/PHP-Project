@@ -49,7 +49,7 @@ class LoginController extends AbstractController
             $username = $_POST['username'];
             $password = password_hash($_POST['password'],PASSWORD_BCRYPT);
             $email = $_POST['email'];
-            if($this->loginService->usersRepository->register($username, $email, $password) == true){
+            if($this->loginService->usersRepository->create($username, $email, $password) == true){
                 $this->login();
             }
 
