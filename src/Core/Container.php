@@ -3,6 +3,7 @@
 namespace App\Core;
 
 
+use App\Products\ProductsAdminController;
 use App\Users\LoginController;
 use App\Users\LoginService;
 use App\Users\UsersRepository;
@@ -39,6 +40,12 @@ class Container
             },
             'productsRepository' => function() {
                 return new ProductsRepository($this->make("pdo"));
+            },
+            'productsAdminController' => function(){
+                return new ProductsAdminController(
+                    $this->make("productsRepository"),
+                    $this->make("categoriesRepository")
+                );
             },
             'ratingsRepository' => function(){
                 return new RatingRepository($this->make("pdo"));

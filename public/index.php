@@ -25,10 +25,22 @@ $routes = [
         'controller' => 'productsController',
         'method' => 'detail',
     ],
-    '/list' => [
-    'controller' => 'productsController',
-    'method' => 'admin_list',
-],
+    '/products-admin' => [
+    'controller' => 'productsAdminController',
+    'method' => 'index',
+    ],
+    '/products-create' => [
+        'controller' => 'productsAdminController',
+        'method' => 'create',
+    ],
+    '/products-edit' => [
+        'controller' => 'productsAdminController',
+        'method' => 'edit',
+    ],
+    '/products-delete' => [
+        'controller' => 'productsAdminController',
+        'method' => 'delete',
+    ],
 ];
 
 if(!empty($_SESSION)){
