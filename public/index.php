@@ -85,6 +85,14 @@ $routes = [
         'controller' => 'cartsController',
         'method' => 'pay',
     ],
+    '/cart-orders' => [
+        'controller' => 'cartsController',
+        'method' => 'orders',
+    ],
+    '/cart-order' => [
+        'controller' => 'cartsController',
+        'method' => 'order',
+    ],
 ];
 
 $login_routes = [
