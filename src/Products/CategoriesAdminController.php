@@ -13,7 +13,7 @@ class CategoriesAdminController extends AbstractController
     }
 
     public function index(){
-        if($_SESSION['superuser']){
+        if($_SESSION['user_superuser']){
             $categories = $this->categoriesRepository->fetchAll();
             $this->render("categories/admin/index",[
                 'categories'=> $categories,
