@@ -5,7 +5,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-            <?php if(!empty($_SESSION['login'])): ?>
+            <?php if(!empty($_SESSION['user_id'])): ?>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="categories">Startseite</a>
@@ -17,16 +17,20 @@
                         <a class="nav-link" href="products">Produkte</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Warenkorb</a>
+                        <a class="nav-link" href="cart">Warenkorb</a>
                     </li>
                 </ul>
                 <div class="d-flex">
                     <div class="nav-item dropdown">
                         <a class="nav-link btn btn-secondary btn-sm dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Hallo, <?php echo e($_SESSION['login']) ?>
+                            Hallo, <?php echo e($_SESSION['user_name']) ?>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <?php if($_SESSION['superuser']): ?>
+                                <li><h6 class="dropdown-header">Konto</h6></li>
+                                <li><a class="dropdown-item" href="user-edit">Bearbeiten</a></li>
+                                <div class="dropdown-divider"></div>
+                            <?php if($_SESSION['user_superuser']): ?>
+                                <li><h6 class="dropdown-header">Adminbereich</h6></li>
                                 <li><a class="dropdown-item" href="products-admin">Produkte</a></li>
                                 <li><a class="dropdown-item" href="categories-admin">Kategorien</a></li>
                                 <div class="dropdown-divider"></div>
