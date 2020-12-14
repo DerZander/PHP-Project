@@ -15,7 +15,7 @@ class CategoriesAdminController extends AbstractController
     public function index(){
         if($_SESSION['superuser']){
             $categories = $this->categoriesRepository->fetchAll();
-            $this->render("products/admin/categories_index",[
+            $this->render("categories/admin/index",[
                 'categories'=> $categories,
             ]);
         }else{
@@ -35,7 +35,7 @@ class CategoriesAdminController extends AbstractController
         }else{
             $message = "Kann nicht erzeugt werden";
         }
-        $this->render("products/admin/categories_create",
+        $this->render("categories/admin/create",
             [
                 "message" => $message,
             ]
@@ -53,7 +53,7 @@ class CategoriesAdminController extends AbstractController
             header("Location: categories-admin");
             return;
         }
-        $this->render("products/admin/categories_edit",[
+        $this->render("categories/admin/edit",[
             "entry" => $entry,
         ]);
     }
