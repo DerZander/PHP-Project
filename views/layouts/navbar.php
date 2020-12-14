@@ -11,6 +11,9 @@
                         <a class="nav-link" href="index">Startseite</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="categories">Kategorien</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="index">Produkte</a>
                     </li>
                     <li class="nav-item">

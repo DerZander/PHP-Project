@@ -41,6 +41,10 @@ $routes = [
         'controller' => 'productsAdminController',
         'method' => 'delete',
     ],
+    '/categories' => [
+        'controller' => 'categoriesController',
+        'method' => 'index',
+    ],
     '/categories-admin' => [
         'controller' => 'categoriesAdminController',
         'method' => 'index',
