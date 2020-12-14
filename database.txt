@@ -1,0 +1,86 @@
+-- shop.users definition
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(100) NOT NULL,
+  `first_name` varchar(100) DEFAULT NULL,
+  `last_name` varchar(100) DEFAULT NULL,
+  `email` varchar(100) NOT NULL,
+  `street` varchar(100) DEFAULT NULL,
+  `housenumber` varchar(100) DEFAULT NULL,
+  `postcode` varchar(100) DEFAULT NULL,
+  `city` varchar(100) DEFAULT NULL,
+  `password` varchar(100) NOT NULL,
+  `superuser` tinyint(1) DEFAULT 0,
+  `birthday` date DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+-- shop.ratings definition
+
+CREATE TABLE `ratings` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` timestamp NOT NULL DEFAULT current_timestamp(),
+  `rating` text NOT NULL,
+  `stars` int(11) DEFAULT NULL,
+  `product_id` int(11) NOT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `ratings_FK` (`user_id`),
+  KEY `ratings_FK_1` (`product_id`),
+  CONSTRAINT `ratings_FK` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`),
+  CONSTRAINT `ratings_FK_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=latin1;
+
+-- shop.products definition
+
+CREATE TABLE `products` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `picture` blob DEFAULT NULL,
+  `description` text CHARACTER SET utf8 DEFAULT NULL,
+  `price` decimal(10,2) NOT NULL,
+  `category_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `category` (`category_id`),
+  CONSTRAINT `products_FK` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+
+-- shop.categories definition
+
+CREATE TABLE `categories` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+
+-- shop.cart_content definition
+
+CREATE TABLE `cart_content` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `product_id` int(11) NOT NULL,
+  `amount` int(11) NOT NULL,
+  `cart_id` int(11) NOT NULL,
+  `product_name` varchar(100) DEFAULT NULL,
+  `product_price` decimal(10,2) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `cart_content_FK` (`cart_id`),
+  KEY `cart_content_FK_1` (`product_id`),
+  CONSTRAINT `cart_content_FK` FOREIGN KEY (`cart_id`) REFERENCES `cart` (`id`),
+  CONSTRAINT `cart_content_FK_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
+
+-- shop.cart definition
+
+CREATE TABLE `cart` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` timestamp NOT NULL DEFAULT current_timestamp(),
+  `user_id` int(11) NOT NULL,
+  `total_amount` int(11) DEFAULT NULL,
+  `total_price` decimal(10,2) DEFAULT NULL,
+  `paid` date DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `cart_FK` (`user_id`),
+  CONSTRAINT `cart_FK` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=latin1;
