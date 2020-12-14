@@ -21,6 +21,10 @@ $routes = [
         'controller' => 'loginController',
         'method' => 'dashboard',
     ],
+    '/user-edit'=> [
+      'controller' => 'usersController',
+      'method' => 'edit',
+    ],
     '/products' => [
         'controller' => 'productsController',
         'method' => 'index',
@@ -30,8 +34,8 @@ $routes = [
         'method' => 'detail',
     ],
     '/products-admin' => [
-    'controller' => 'productsAdminController',
-    'method' => 'index',
+        'controller' => 'productsAdminController',
+        'method' => 'index',
     ],
     '/products-create' => [
         'controller' => 'productsAdminController',
@@ -64,6 +68,22 @@ $routes = [
     '/categories-delete' => [
         'controller' => 'categoriesAdminController',
         'method' => 'delete',
+    ],
+    '/cart' => [
+        'controller' => 'cartsController',
+        'method' => 'index',
+    ],
+    '/cart-insert' => [
+        'controller' => 'cartsController',
+        'method' => 'insert',
+    ],
+    '/cart-ejection' => [
+        'controller' => 'cartsController',
+        'method' => 'ejection',
+    ],
+    '/cart-pay' => [
+        'controller' => 'cartsController',
+        'method' => 'pay',
     ],
 ];
 
