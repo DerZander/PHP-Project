@@ -8,13 +8,13 @@
             <?php if(!empty($_SESSION['login'])): ?>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index">Startseite</a>
+                        <a class="nav-link" href="categories">Startseite</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="categories">Kategorien</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index">Produkte</a>
+                        <a class="nav-link" href="products">Produkte</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Warenkorb</a>
