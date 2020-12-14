@@ -12,6 +12,7 @@ class UserModel extends AbstractModel
     public $username;
     public $first_name;
     public $last_name;
+    public $birthday;
     public $email;
     public $street;
     public $housenumber;
