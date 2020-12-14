@@ -36,5 +36,12 @@ class RatingRepository extends AbstractRepository
         $ratings = $stmt->fetchAll(PDO::FETCH_CLASS, $model);
         return $ratings;
     }
+    public function delete($id){
+        $table = $this->getTableName();
+        $stmt = $this->pdo->prepare("DELETE FROM `{$table}` WHERE `id` = :id;");
+        $stmt->execute([
+            'id' => $id,
+        ]);
+    }
 }
 ?>
