@@ -16,7 +16,7 @@ class ProductsAdminController extends AbstractController
     }
 
     public function index(){
-        if($_SESSION['superuser']){
+        if($_SESSION['user_superuser']){
             $products = $this->productsRepository->fetchAll();
             $this->render("products/admin/index",[
                 'products'=> $products,
