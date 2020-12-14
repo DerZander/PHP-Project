@@ -3,12 +3,16 @@
 namespace App\Core;
 
 
+use App\Carts\CartsRepository;
+use App\Carts\CartsController;
+
 use App\Products\CategoriesAdminController;
 use App\Products\CategoriesController;
 use App\Products\CategoriesRepository;
 
 use App\Users\LoginController;
 use App\Users\LoginService;
+use App\Users\UsersController;
 use App\Users\UsersRepository;
 
 use App\Products\ProductsAdminController;
@@ -35,6 +39,11 @@ class Container
             'loginService' => function(){
                 return new LoginService($this->make("usersRepository"));
             },
+            'usersController'=> function(){
+                return new UsersController(
+                    $this->make('usersRepository')
+                );
+            },
             'usersRepository' => function(){
                 return new UsersRepository($this->make("pdo"));
             },
@@ -54,17 +63,23 @@ class Container
             'productsRepository' => function() {
                 return new ProductsRepository($this->make("pdo"));
             },
-
             'categoriesAdminController' => function(){
                 return new CategoriesAdminController($this->make("categoriesRepository"));
             },
             'categoriesController'=> function(){
-                return new CategoriesController(
-                    $this->make('categoriesRepository')
-                );
+                return new CategoriesController($this->make('categoriesRepository'));
             },
             'categoriesRepository' => function() {
                 return new CategoriesRepository($this->make("pdo"));
+            },
+            'cartsController' => function(){
+                return new CartsController(
+                    $this->make("cartsRepository"),
+                    $this->make("productsRepository")
+                );
+            },
+            'cartsRepository' => function(){
+                return new CartsRepository($this->make("pdo"));
             },
             'ratingsRepository' => function(){
                 return new RatingRepository($this->make("pdo"));
