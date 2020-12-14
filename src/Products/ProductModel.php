@@ -9,7 +9,7 @@ class ProductModel extends AbstractModel
     public $name;
     public $description;
     public $price;
-    public $category;
+    public $category_id;
 
 }
 ?>
