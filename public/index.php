@@ -21,7 +21,7 @@ $routes = [
         'controller' => 'loginController',
         'method' => 'dashboard',
     ],
-    '/index' => [
+    '/products' => [
         'controller' => 'productsController',
         'method' => 'index',
     ],
