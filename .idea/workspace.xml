@@ -10,12 +10,30 @@
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e21e4223-0c53-48d5-b3f6-9abf7e5588a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Users/UsersRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/carts/order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/carts/orders.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/users/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Container.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Container.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Products/ProductsRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Products/ProductsRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Products/RatingRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Products/RatingRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Users/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Users/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/carts/conclusion.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/carts/conclusion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/carts/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/carts/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layouts/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/users/edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/edit.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,21 +65,28 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
+    <property name="last_opened_file_path" value="B:/Projects/PHP-Project/Database" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\project\views\carts" />
+      <recent name="C:\xampp\htdocs\project\views\categories" />
+      <recent name="C:\xampp\htdocs\project\views\products\admin" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\project\src\Products" />
-      <recent name="C:\xampp\htdocs\project\views\Products" />
-      <recent name="C:\xampp\htdocs\project\views\layouts" />
-      <recent name="C:\xampp\htdocs\project\pages\structure" />
-      <recent name="C:\xampp\htdocs\project\pages\products" />
+      <recent name="C:\xampp\htdocs\project" />
+      <recent name="C:\xampp\htdocs\project\views\carts" />
+      <recent name="C:\xampp\htdocs\project\src\Carts" />
+      <recent name="C:\xampp\htdocs\project\views\users" />
+      <recent name="C:\xampp\htdocs\project\views\categories\admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -82,177 +107,353 @@
       <workItem from="1607802613772" duration="13448000" />
       <workItem from="1607816224232" duration="1007000" />
       <workItem from="1607853872038" duration="470000" />
-      <workItem from="1607854605386" duration="1231000" />
+      <workItem from="1607854605386" duration="20576000" />
+      <workItem from="1607934820194" duration="37425000" />
     </task>
-    <task id="LOCAL-00001" summary="(feat): start to commit the project">
-      <created>1607802921027</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00034" summary="(feat): add filter by Category function">
+      <created>1607870141227</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
       <option name="project" value="LOCAL" />
-      <updated>1607802921027</updated>
+      <updated>1607870141227</updated>
     </task>
-    <task id="LOCAL-00002" summary="(feat): create x params by key and value">
-      <created>1607803186656</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00035" summary="(feat): setup the navbar for logged in">
+      <created>1607870154331</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
       <option name="project" value="LOCAL" />
-      <updated>1607803186656</updated>
+      <updated>1607870154331</updated>
     </task>
-    <task id="LOCAL-00003" summary="(else):">
-      <created>1607803199467</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
+    <task id="LOCAL-00036" summary="(feat): create LoginController.php, LoginService.php and the login page">
+      <created>1607870177681</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
       <option name="project" value="LOCAL" />
-      <updated>1607803199467</updated>
+      <updated>1607870177681</updated>
     </task>
-    <task id="LOCAL-00004" summary="(refactor): change H1">
-      <created>1607803226529</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
+    <task id="LOCAL-00037" summary="(feat): add the cart to Project">
+      <created>1607870238274</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
       <option name="project" value="LOCAL" />
-      <updated>1607803226529</updated>
+      <updated>1607870238274</updated>
     </task>
-    <task id="LOCAL-00005" summary="(refactor): change foreach to php-helpers">
-      <created>1607803265574</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
+    <task id="LOCAL-00038" summary="(feat): check if user logged in, if no then user can only login">
+      <created>1607870818225</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
       <option name="project" value="LOCAL" />
-      <updated>1607803265574</updated>
+      <updated>1607870818225</updated>
     </task>
-    <task id="LOCAL-00006" summary="(feat): create routing">
-      <created>1607803681414</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
+    <task id="LOCAL-00039" summary="(refactor): Set the header for each rating">
+      <created>1607873026026</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
       <option name="project" value="LOCAL" />
-      <updated>1607803681414</updated>
+      <updated>1607873026026</updated>
     </task>
-    <task id="LOCAL-00007" summary="(refactor): create a simple router like django for this project">
-      <created>1607816300196</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
+    <task id="LOCAL-00040" summary="(refactor): add the url for list">
+      <created>1607873044308</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
       <option name="project" value="LOCAL" />
-      <updated>1607816300196</updated>
+      <updated>1607873044308</updated>
     </task>
-    <task id="LOCAL-00008" summary="(delete): remove folder named &quot;pages&quot;">
-      <created>1607816367204</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
+    <task id="LOCAL-00041" summary="(refactor): add the url for list">
+      <created>1607873054315</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
       <option name="project" value="LOCAL" />
-      <updated>1607816367204</updated>
+      <updated>1607873054315</updated>
     </task>
-    <task id="LOCAL-00009" summary="(refactor): renamed the navbar and the href´s">
-      <created>1607816455248</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
+    <task id="LOCAL-00042" summary="(refactor): add the url for list">
+      <created>1607873207494</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
       <option name="project" value="LOCAL" />
-      <updated>1607816455248</updated>
+      <updated>1607873207494</updated>
     </task>
-    <task id="LOCAL-00010" summary="(feat): create proctec function for db-entries">
-      <created>1607816501928</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
+    <task id="LOCAL-00043" summary="(feat):set two new sessions">
+      <created>1607873223882</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
       <option name="project" value="LOCAL" />
-      <updated>1607816501928</updated>
+      <updated>1607873223882</updated>
     </task>
-    <task id="LOCAL-00011" summary="(refactor): change the form for the ratingsystem and change the display of raitings">
-      <created>1607816594995</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
+    <task id="LOCAL-00044" summary="(feat): create a list for admins">
+      <created>1607873236977</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
       <option name="project" value="LOCAL" />
-      <updated>1607816594995</updated>
+      <updated>1607873236977</updated>
     </task>
-    <task id="LOCAL-00012" summary="(refactor): delete unecessary code, add ratingRepo to reciepts, add this to ProductsController">
-      <created>1607816862959</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
+    <task id="LOCAL-00045" summary="(feat): add user_id to raiting">
+      <created>1607873259334</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
       <option name="project" value="LOCAL" />
-      <updated>1607816862959</updated>
+      <updated>1607873259334</updated>
     </task>
-    <task id="LOCAL-00013" summary="(feat): create the AbstractController.php, AbstractModel.php, AbstractRepository.php">
-      <created>1607816987281</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
+    <task id="LOCAL-00046" summary="(feat): create edit/delete/create function and form for products">
+      <created>1607940917052</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
       <option name="project" value="LOCAL" />
-      <updated>1607816987281</updated>
+      <updated>1607940917052</updated>
     </task>
-    <task id="LOCAL-00014" summary="(feat): create the RatingModel.php">
-      <created>1607817017360</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
+    <task id="LOCAL-00047" summary="(feat): create adminprodukt link">
+      <created>1607940945740</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
       <option name="project" value="LOCAL" />
-      <updated>1607817017360</updated>
+      <updated>1607940945740</updated>
     </task>
-    <task id="LOCAL-00015" summary="(feat): create the fetchbyProduct  function and the create function">
-      <created>1607817047672</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
+    <task id="LOCAL-00048" summary="(refactor): change variable">
+      <created>1607940959990</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
       <option name="project" value="LOCAL" />
-      <updated>1607817047672</updated>
+      <updated>1607940959990</updated>
     </task>
-    <task id="LOCAL-00016" summary="(refactor): change the searchform, add the protection">
-      <created>1607817132052</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
+    <task id="LOCAL-00049" summary="(refactor): renamed list to index of products">
+      <created>1607940978608</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
       <option name="project" value="LOCAL" />
-      <updated>1607817132052</updated>
+      <updated>1607940978608</updated>
     </task>
-    <task id="LOCAL-00017" summary="(refactor): extends with AbstractModel">
-      <created>1607817148534</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
+    <task id="LOCAL-00050" summary="(feat): add create/edit/delete/index function for categories">
+      <created>1607942302337</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
       <option name="project" value="LOCAL" />
-      <updated>1607817148534</updated>
+      <updated>1607942302337</updated>
     </task>
-    <task id="LOCAL-00018" summary="(refactor): extends with AbstractController, and setup the create function for the rating">
-      <created>1607817183814</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
+    <task id="LOCAL-00051" summary="(refactor): Change Headers">
+      <created>1607942318807</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
       <option name="project" value="LOCAL" />
-      <updated>1607817183814</updated>
+      <updated>1607942318807</updated>
     </task>
-    <task id="LOCAL-00019" summary="(refactor): extends with AbstractRespository">
-      <created>1607817199849</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
+    <task id="LOCAL-00052" summary="(refactor): extract the delete function to AbstractRepository.php">
+      <created>1607942339833</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
       <option name="project" value="LOCAL" />
-      <updated>1607817199849</updated>
+      <updated>1607942339833</updated>
     </task>
-    <task id="LOCAL-00020" summary="()">
-      <created>1607817206553</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
+    <task id="LOCAL-00053" summary="(refactor): move to own folder">
+      <created>1607942962556</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
       <option name="project" value="LOCAL" />
-      <updated>1607817206553</updated>
+      <updated>1607942962556</updated>
     </task>
-    <task id="LOCAL-00021" summary="(feat): create Usermodel">
-      <created>1607855315284</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
+    <task id="LOCAL-00054" summary="(feat): create categorie user index">
+      <created>1607943357855</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
       <option name="project" value="LOCAL" />
-      <updated>1607855315284</updated>
+      <updated>1607943357855</updated>
     </task>
-    <task id="LOCAL-00022" summary="(feat): set the header-location to url.php/">
-      <created>1607855484525</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
+    <task id="LOCAL-00055" summary="(feat): create the register function">
+      <created>1607945096570</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
       <option name="project" value="LOCAL" />
-      <updated>1607855484525</updated>
+      <updated>1607945096570</updated>
     </task>
-    <task id="LOCAL-00023" summary="(refactor): delete debug_message">
-      <created>1607855517732</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
+    <task id="LOCAL-00056" summary="(refactor): change index to products">
+      <created>1607954181042</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
       <option name="project" value="LOCAL" />
-      <updated>1607855517732</updated>
+      <updated>1607954181042</updated>
     </task>
-    <task id="LOCAL-00024" summary="(feat): create the Model">
-      <created>1607855841492</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
+    <task id="LOCAL-00057" summary="(refactor): change index to products">
+      <created>1607954185986</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
       <option name="project" value="LOCAL" />
-      <updated>1607855841492</updated>
+      <updated>1607954185986</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00058" summary="(refactor): extract categories from products">
+      <created>1607954219637</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1607954219637</updated>
+    </task>
+    <task id="LOCAL-00059" summary="(refactor): spacing">
+      <created>1607973610545</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973610545</updated>
+    </task>
+    <task id="LOCAL-00060" summary="(refactor): session change, update usermodel">
+      <created>1607973658991</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973658991</updated>
+    </task>
+    <task id="LOCAL-00061" summary="(refactor): change register into create and update function for user">
+      <created>1607973695607</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973695607</updated>
+    </task>
+    <task id="LOCAL-00062" summary="(refactor): change register into create and update function for user">
+      <created>1607973708540</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973708541</updated>
+    </task>
+    <task id="LOCAL-00063" summary="(refactor): Session">
+      <created>1607973722960</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973722960</updated>
+    </task>
+    <task id="LOCAL-00064" summary="(refactor): Session, new link for user edit">
+      <created>1607973750662</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973750662</updated>
+    </task>
+    <task id="LOCAL-00065" summary="(refactor): Session">
+      <created>1607973770827</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973770827</updated>
+    </task>
+    <task id="LOCAL-00066" summary="(refactor): delete unessasary code">
+      <created>1607973811919</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973811919</updated>
+    </task>
+    <task id="LOCAL-00067" summary="(refactor): styling">
+      <created>1607973825519</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973825519</updated>
+    </task>
+    <task id="LOCAL-00068" summary="(refactor): rename">
+      <created>1607973840123</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973840123</updated>
+    </task>
+    <task id="LOCAL-00069" summary="(refactor): restyle the ratingview">
+      <created>1607973860137</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973860137</updated>
+    </task>
+    <task id="LOCAL-00070" summary="(feat): create the overview for the cart">
+      <created>1607973895658</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973895658</updated>
+    </task>
+    <task id="LOCAL-00071" summary="(feat): create model of cart">
+      <created>1607973903238</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973903238</updated>
+    </task>
+    <task id="LOCAL-00072" summary="(feat): delete unnesasary model">
+      <created>1607973935940</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973935940</updated>
+    </task>
+    <task id="LOCAL-00073" summary="(feat): create controller with index, insert, ejection, pay functions">
+      <created>1607973968783</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973968783</updated>
+    </task>
+    <task id="LOCAL-00074" summary="(feat): create controller with index, insert, ejection, pay functions">
+      <created>1607973976831</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973976831</updated>
+    </task>
+    <task id="LOCAL-00075" summary="(feat): create thankyou page">
+      <created>1607973991980</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1607973991980</updated>
+    </task>
+    <task id="LOCAL-00076" summary="(feat): create reciept for cart">
+      <created>1607974009837</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1607974009837</updated>
+    </task>
+    <task id="LOCAL-00077" summary="(feat): create the edit view of users">
+      <created>1607974021725</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1607974021725</updated>
+    </task>
+    <task id="LOCAL-00078" summary="(feat): update the router">
+      <created>1607974033365</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1607974033365</updated>
+    </task>
+    <task id="LOCAL-00079" summary="(feat): remove delete from AbstractRepository.php">
+      <created>1607981771148</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1607981771148</updated>
+    </task>
+    <task id="LOCAL-00080" summary="(feat): create CartModel">
+      <created>1607981789428</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1607981789428</updated>
+    </task>
+    <task id="LOCAL-00081" summary="(feat): create pay and order function">
+      <created>1607981820850</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1607981820850</updated>
+    </task>
+    <task id="LOCAL-00082" summary="(feat): create delete function">
+      <created>1607981841488</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1607981841488</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +464,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -271,72 +484,97 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="(feat): start to commit the project" />
-    <MESSAGE value="(feat): create x params by key and value" />
-    <MESSAGE value="(else):" />
-    <MESSAGE value="(refactor): change H1" />
-    <MESSAGE value="(refactor): change foreach to php-helpers" />
-    <MESSAGE value="(feat): create routing" />
-    <MESSAGE value="(refactor): create a simple router like django for this project" />
-    <MESSAGE value="(delete): remove folder named &quot;pages&quot;" />
-    <MESSAGE value="(refactor): renamed the navbar and the href´s" />
-    <MESSAGE value="(feat): create proctec function for db-entries" />
-    <MESSAGE value="(refactor): change the form for the ratingsystem and change the display of raitings" />
-    <MESSAGE value="(refactor): delete unecessary code, add ratingRepo to reciepts, add this to ProductsController" />
-    <MESSAGE value="(feat): create the AbstractController.php, AbstractModel.php, AbstractRepository.php" />
-    <MESSAGE value="(feat): create the RatingModel.php" />
-    <MESSAGE value="(feat): create the fetchbyProduct  function and the create function" />
-    <MESSAGE value="(refactor): change the searchform, add the protection" />
-    <MESSAGE value="(refactor): extends with AbstractModel" />
-    <MESSAGE value="(refactor): extends with AbstractController, and setup the create function for the rating" />
-    <MESSAGE value="(refactor): extends with AbstractRespository" />
-    <MESSAGE value="()" />
-    <MESSAGE value="(feat): create Usermodel" />
-    <MESSAGE value="(feat): set the header-location to url.php/" />
-    <MESSAGE value="(refactor): delete debug_message" />
-    <MESSAGE value="(feat): create the Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="(feat): create the Model" />
+    <MESSAGE value="(feat): create the register function" />
+    <MESSAGE value="(refactor): change index to products" />
+    <MESSAGE value="(refactor): exctract cat from pro" />
+    <MESSAGE value="(refactor): extract categories from products" />
+    <MESSAGE value="(refactor): spacing" />
+    <MESSAGE value="(refactor): session change, update usermodel" />
+    <MESSAGE value="(refactor): change register into create and update function for user" />
+    <MESSAGE value="(refactor): Session, new link for user edit" />
+    <MESSAGE value="(refactor): Session" />
+    <MESSAGE value="(refactor): delete unessasary code" />
+    <MESSAGE value="(refactor): styling" />
+    <MESSAGE value="(refactor): rename" />
+    <MESSAGE value="(refactor): restyle the ratingview" />
+    <MESSAGE value="(feat): create the overview for the cart" />
+    <MESSAGE value="(feat): create model of cart" />
+    <MESSAGE value="(feat): delete unnesasary model" />
+    <MESSAGE value="(feat): create controller with index, insert, ejection, pay functions" />
+    <MESSAGE value="(feat): create thankyou page" />
+    <MESSAGE value="(feat): create reciept for cart" />
+    <MESSAGE value="(feat): create the edit view of users" />
+    <MESSAGE value="(feat): update the router" />
+    <MESSAGE value="(feat): remove delete from AbstractRepository.php" />
+    <MESSAGE value="(feat): create CartModel" />
+    <MESSAGE value="(feat): create pay and order function" />
+    <MESSAGE value="(feat): create delete function" />
+    <option name="LAST_COMMIT_MESSAGE" value="(feat): create delete function" />
   </component>
   <component name="WindowStateProjectService">
     <state x="540" y="186" key="#Servers" timestamp="1607722320618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="186" key="#Servers/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607722320618" />
-    <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607722340391">
+    <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607981528364">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607722340391" />
-    <state x="1123" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607808076149">
+    <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607981528364" />
+    <state x="725" y="222" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607962721337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1123" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607808076149" />
-    <state x="1220" y="264" key="FileChooserDialogImpl" timestamp="1607802582922">
+    <state x="725" y="222" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607962721337" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607981125884">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="264" key="FileChooserDialogImpl/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607802582922" />
-    <state x="1159" y="246" key="NewPhpClassDialog" timestamp="1607855446706">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607981125884" />
+    <state x="1123" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1607979158140">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1159" y="246" key="NewPhpClassDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607855446706" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1607804829991">
+    <state x="1123" y="278" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607979158140" />
+    <state x="640" y="274" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1607981652014">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607804829991" />
+    <state x="640" y="274" key="DUMP_DIALOG_DIMENSION_KEY/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607981652014" />
+    <state x="1220" y="264" key="FileChooserDialogImpl" timestamp="1607981701248">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1220" y="264" key="FileChooserDialogImpl/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607981701248" />
+    <state width="271" height="457" key="HiddenNamespacesPopup" timestamp="1607981558511">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="271" height="457" key="HiddenNamespacesPopup/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607981558511" />
+    <state x="1159" y="246" key="NewPhpClassDialog" timestamp="1607979148429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1159" y="246" key="NewPhpClassDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607979148429" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1607978346571">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607978346571" />
     <state x="922" y="164" key="SettingsEditor" timestamp="1607802535130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="922" y="164" key="SettingsEditor/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607802535130" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1607866251463">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607866251463" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1607957384295">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607957384295" />
     <state x="986" y="285" key="refactoring.ChangeSignatureDialog" timestamp="1607795778880">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="986" y="285" key="refactoring.ChangeSignatureDialog/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607795778880" />
-    <state x="1096" y="244" key="run.anything.popup" timestamp="1607812273054">
+    <state x="1096" y="244" key="run.anything.popup" timestamp="1607959020707">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1096" y="244" key="run.anything.popup/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607812273054" />
-    <state x="1103" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607813823819">
+    <state x="1096" y="244" key="run.anything.popup/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607959020707" />
+    <state x="1103" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1607871319933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1103" y="225" width="672" height="678" key="search.everywhere.popup/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607813823819" />
+    <state x="1103" y="225" width="672" height="678" key="search.everywhere.popup/-1584.95.1584.860/0.0.1920.1040@0.0.1920.1040" timestamp="1607871319933" />
   </component>
 </project>
