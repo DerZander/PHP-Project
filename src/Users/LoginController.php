@@ -14,7 +14,7 @@ class LoginController extends AbstractController
 
     public function dashboard(){
         $this->loginService->check();
-        header("Location: index");
+        header("Location: cart-orders");
     }
 
     public function logout(){
@@ -31,7 +31,7 @@ class LoginController extends AbstractController
             $password = $_POST['password'];
 
             if($this->loginService->attempt($username,$password)){
-                header("Location: dashboard");
+                header("Location: cart-orders");
                 return;
             }else{
                 $error = true;
