@@ -11,7 +11,7 @@
     </div>
     <div class="card-body">
 
-        <div class="row row-cols-1 row-cols-md-3 ">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
             <?php foreach ($categories AS $category): ?>
                 <div class="col">
                     <div class="card" style="width: auto">
@@ -27,7 +27,7 @@
                         </div>
                         <div class="card-footer">
                             <div class="d-flex justify-content-center">
-                                <a class="btn btn-success btn-sm ms-2" href="index?category=<?php echo $category['name'] ?>">Produkte zu dieser Kategorie ansehen</a>
+                                <a class="btn btn-success btn-sm ms-2" href="products?category=<?php echo $category['name'] ?>">Produkte zu dieser Kategorie ansehen</a>
                             </div>
                         </div>
                     </div>
