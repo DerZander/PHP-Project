@@ -47,7 +47,7 @@
                     <input type="text" class="form-control" name="city" value="<?php echo e($entry['city']) ?>">
                 </div>
             </li>
-            <li class="list-group-item">
+            <!--li class="list-group-item">
                 <h5 class="card-title">Passwort ändern</h5>
                 <div class="input-group mb-3">
                     <span class="input-group-text">altes Password</span>
@@ -57,10 +57,10 @@
                     <span class="input-group-text">neues Password</span>
                     <input type="password" class="form-control" name="new_password">
                 </div>
-            </li>
+            </li-->
             <li class="list-group-item">
                 <h5 class="card-title">Abspeichern</h5>
-                <p>Alle von Ihnen eingegebenen Daten werden nicht an Dritte weiter gegeben.</p>
+                <p>Alle von Ihnen eingegebenen Daten werden nicht an Dritte weitergegeben.</p>
                 <input type="submit" class="btn btn-success" value="Speichern">
             </li>
         </ul>
