@@ -24,8 +24,8 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <?php if($_SESSION['superuser']): ?>
-                                <li><a class="dropdown-item" href="/admin">Adminseite</a></li>
                                 <li><a class="dropdown-item" href="products-admin">Produkte</a></li>
+                                <li><a class="dropdown-item" href="categories-admin">Kategorien</a></li>
                                 <div class="dropdown-divider"></div>
                             <?php endif;?>
                             <li><a class="dropdown-item" href="logout">Abmelden</a></li>

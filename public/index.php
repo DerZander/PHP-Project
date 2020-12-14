@@ -41,6 +41,22 @@ $routes = [
         'controller' => 'productsAdminController',
         'method' => 'delete',
     ],
+    '/categories-admin' => [
+        'controller' => 'categoriesAdminController',
+        'method' => 'index',
+    ],
+    '/categories-create' => [
+        'controller' => 'categoriesAdminController',
+        'method' => 'create',
+    ],
+    '/categories-edit' => [
+        'controller' => 'categoriesAdminController',
+        'method' => 'edit',
+    ],
+    '/categories-delete' => [
+        'controller' => 'categoriesAdminController',
+        'method' => 'delete',
+    ],
 ];
 
 if(!empty($_SESSION)){
