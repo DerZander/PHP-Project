@@ -9,6 +9,10 @@ $routes = [
         'controller' => 'loginController',
         'method' => 'login',
     ],
+    '/register' => [
+        'controller' => 'loginController',
+        'method' => 'register',
+    ],
     '/logout' => [
         'controller' => 'loginController',
         'method' => 'logout',
@@ -63,6 +67,21 @@ $routes = [
     ],
 ];
 
+$login_routes = [
+    '/login' => [
+        'controller' => 'loginController',
+        'method' => 'login',
+    ],
+    '/register' => [
+        'controller' => 'loginController',
+        'method' => 'register',
+    ],
+    '/' => [
+    'controller' => 'loginController',
+    'method' => 'register',
+]
+];
+
 if(!empty($_SESSION)){
     if(isset($routes[$pathInfo])){
         $route = $routes[$pathInfo];
@@ -71,7 +90,7 @@ if(!empty($_SESSION)){
         $controller->$method();
     }
 }else{
-    $route = $routes["/login"];
+    $route = $login_routes[$pathInfo];
     $controller = $container->make($route['controller']);
     $method = $route['method'];
     $controller->$method();

@@ -42,4 +42,20 @@ class LoginController extends AbstractController
             'error' => $error,
         ]);
     }
+
+    public function register(){
+        $error = null;
+        if(!empty($_POST['username']) AND !empty($_POST['email']) AND !empty($_POST['password'])){
+            $username = $_POST['username'];
+            $password = password_hash($_POST['password'],PASSWORD_BCRYPT);
+            $email = $_POST['email'];
+            if($this->loginService->usersRepository->register($username, $email, $password) == true){
+                $this->login();
+            }
+
+        }
+        $this->render("users/login",[
+            'error' => $error,
+        ]);
+    }
 }

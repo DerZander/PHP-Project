@@ -25,4 +25,15 @@ class UsersRepository extends AbstractRepository
         $stmt->setFetchMode(PDO::FETCH_CLASS, $model);
         return $stmt->fetch(PDO::FETCH_CLASS);
     }
+
+    public function register($username, $email, $password){
+        $table = $this->getTableName();
+        $stmt = $this->pdo->prepare("INSERT INTO `$table` (`username`, `email`, `password`) VALUES (:username, :email, :password);");
+        $stmt->execute([
+            'username' => $username,
+            'email' => $email,
+            'password' => $password,
+        ]);
+        return true;
+    }
 }
