@@ -75,7 +75,8 @@ class Container
             'cartsController' => function(){
                 return new CartsController(
                     $this->make("cartsRepository"),
-                    $this->make("productsRepository")
+                    $this->make("productsRepository"),
+                    $this->make('usersRepository')
                 );
             },
             'cartsRepository' => function(){
