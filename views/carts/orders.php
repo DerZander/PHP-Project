@@ -1,6 +1,6 @@
 <?php include __DIR__ . "/../layouts/header.php"?>
 <div class="card text-dark bg-light m-3 ">
-    <?php if(!isset($carts)): ?>
+    <?php if(empty($carts)): ?>
         <div class="card-header">
             <div class="row">
                 <div class="col">
